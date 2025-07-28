@@ -1,6 +1,6 @@
-import React, { use } from "react";
 import { useEffect, useState } from "react";
 import Table, { Cell, HeadCell, Row, TBody, THead } from "@atlaskit/table";
+import Heading from "@atlaskit/heading";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -19,6 +19,9 @@ function App() {
 
   return (
     <div>
+      <div className="heading">
+        <Heading size="large">Employee Management System</Heading>
+      </div>
       <Table>
         <THead>
           <HeadCell>First Name</HeadCell>
