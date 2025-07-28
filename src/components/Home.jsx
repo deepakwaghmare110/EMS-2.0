@@ -1,5 +1,6 @@
 import Table, { Cell, HeadCell, Row, TBody, THead } from "@atlaskit/table";
 import Heading from "@atlaskit/heading";
+import Textfield from "@atlaskit/textfield";
 
 const Home = ({ users }) => {
   return (
@@ -7,6 +8,11 @@ const Home = ({ users }) => {
       <div className="heading">
         <Heading size="large">Employee Management System</Heading>
       </div>
+      <Textfield
+        className="search-bar"
+        type="text"
+        placeholder="Search for employee"
+      />
       <Table>
         <THead>
           <HeadCell>First Name</HeadCell>
