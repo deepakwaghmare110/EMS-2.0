@@ -10,6 +10,12 @@ const Home = ({ users }) => {
     setSearch(e.target.value);
   };
 
+  const filteredUsers = users.filter((user) => {
+    return `${user.firstName} ${user.lastName}`
+      .toLowerCase()
+      .includes(search.toLowerCase());
+  });
+
   return (
     <div>
       <div className="heading">
@@ -32,7 +38,7 @@ const Home = ({ users }) => {
           <HeadCell>Phone Number</HeadCell>
         </THead>
         <TBody>
-          {users.map((user) => (
+          {filteredUsers.map((user) => (
             <Row key={user.id}>
               <Cell>{user.firstName}</Cell>
               <Cell>{user.lastName}</Cell>
