@@ -12,6 +12,7 @@
   "dependencies": {
     "@atlaskit/button": "^23.3.0",
     "@atlaskit/heading": "^5.2.3",
+    "@atlaskit/select": "^21.2.1",
     "@atlaskit/table": "^0.12.4",
     "@atlaskit/textfield": "^8.0.8",
     "react": "^18.2.0",
